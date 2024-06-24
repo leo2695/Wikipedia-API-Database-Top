@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tiposMovimiento" >
+        <item>Crédito</item>
+        <item>Contado</item>
+    </string-array>
+</resources>

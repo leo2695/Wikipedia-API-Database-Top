@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wikipedia"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/menu_wikipedia"/>
+        <item
+            android:id="@+id/nav_ubicaciones_guardadas"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/menu_ubicaciones_guardadas"/>
+        <item
+            android:id="@+id/nav_cantidad_maximas"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/menu_cantidad_maxima"/>
+        <item
+            android:id="@+id/nav_top_lugares"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/menu_top_lugares"/>
+    </group>
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,14 @@
+
+*.hprof
+*.lock
+*.bin
+*.aab
+*.dm
+*.jks
+*.jar
+*.iml
+*.probe
+*.probe
+.gradle/file-system.probe
+*.bat
+*.pro

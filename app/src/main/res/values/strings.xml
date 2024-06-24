@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WikiApi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_wikipedia">Buscar en Wikipedia</string>
+    <string name="menu_ubicaciones_guardadas">Ubicaciones Almacenadas</string>
+    <string name="input_buscar">Buscar...</string>
+    <string name="notificacion_mensaje">Hay resultados relacionados en Wikipedia para este lugar.</string>
+    <string name="notificacion_texto_boton">Mostrar</string>
+    <string name="menu_cantidad_maxima">Configurar Cantidad Máxima</string>
+    <string name="menu_top_lugares">Mi top de visitas</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="input_cantidad">Ingrese el número máximo que desea ver</string>
+    <string name="menu_tools">Configuración</string>
+    <string name="copyright">© Móviles</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment genérico</string>
+</resources>
