@@ -16,8 +16,8 @@ class CantidadMaximaFragment : Fragment() {
 
     private lateinit var databaseHelper: UbicacionDataBaseHelper
     private lateinit var db: SQLiteDatabase
-    private lateinit var limitEditText: EditText
-    private lateinit var saveButton: Button
+    private lateinit var cantidadMaximaEditText: EditText
+    private lateinit var botonGuardar: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,11 +25,11 @@ class CantidadMaximaFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_cantidad_maxima, container, false)
 
-        limitEditText = view.findViewById(R.id.cantidadMaximaEditText)
-        saveButton = view.findViewById(R.id.botonGuardar)
+        cantidadMaximaEditText = view.findViewById(R.id.cantidadMaximaEditText)
+        botonGuardar = view.findViewById(R.id.botonGuardar)
 
-        saveButton.setOnClickListener {
-            saveLimit()
+        botonGuardar.setOnClickListener {
+            guardarCantidad()
         }
 
         return view
@@ -41,10 +41,10 @@ class CantidadMaximaFragment : Fragment() {
         db = databaseHelper.writableDatabase
     }
 
-    private fun saveLimit() {
-        val numeroMaximo = limitEditText.text.toString().toIntOrNull()
+    private fun guardarCantidad() {
+        val numeroMaximo = cantidadMaximaEditText.text.toString().toIntOrNull()
         if (numeroMaximo != null && numeroMaximo > 0) {
-            db.execSQL("DELETE FROM ${UbicacionDataBaseHelper.TABLE_CANTIDAD}") // Limpiar tabla
+            db.execSQL("DELETE FROM ${UbicacionDataBaseHelper.TABLE_CANTIDAD}") //Borra o limpia el numero que este guardado anteriormente
             db.execSQL("INSERT INTO ${UbicacionDataBaseHelper.TABLE_CANTIDAD} (${UbicacionDataBaseHelper.COLUMN_CANTIDAD_MAXIMA}) VALUES ($numeroMaximo)")
             Toast.makeText(context, "Mostrar: $numeroMaximo", Toast.LENGTH_SHORT).show()
         } else {
