@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ControlFinancieroCamera"
+rootProject.name = "Wikipedia-API-Database-Top"
 include(":app")
  
